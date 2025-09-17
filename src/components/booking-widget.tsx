@@ -163,7 +163,7 @@ export const BookingWidget = ({ mentor }: BookingWidgetProps) => {
       setSelectedSlot(null);
 
       // Optional: fire-and-forget email (non-blocking)
-      fetch("https://applywizz-mentorship.vercel.app/api/send-email", {
+      fetch("https://mentor-loop-zeta.vercel.app/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
